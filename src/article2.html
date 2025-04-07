@@ -48,648 +48,464 @@
             <br>
             <br>
 
-            <!-- Article Content
-            <div class="prose">
-                <h1 class="font-bold text-2xl text-gray-600 ml-2">2.1 Definisi Pengembangan Sistem</h1>
+             <!-- Article Content -->
+             <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">DESAIN SISTEM SECARA TERINCI</h1>
+                <br>
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">1 Tujuan Desain Sistem</h1>
                 <p class="text-lg text-gray-600 mt-4 ml-10">
-                    Pengembangan sistem adalah proses perancangan, pembuatan, pengujian, dan perbaikan sistem komputer
-                    atau informasi untuk memenuhi kebutuhan bisnis atau organisasi. Pengembangan system (system
-                    development) dapat berarti menyusun suatu system yang baru untuk menggantikan system yang lama
-                    secara keseluruhan atau memperbaiki system yang telah ada.</p>
-                <br>
-                <br>
-                <br>
+                    Tujuan dari desain sistem secara umum adalah untuk memberikan gambaran secara umum kepada user
+                    tentang sistem yang baru.
+                    Pada tahap desain secara umum, komponen-komponen sistem informasi dirancang dengan tujuan untuk
+                    dikomunikasikan kepada user. Komponen sistem informasi yang didesain adalah model, output, input,
+                    database, teknologi & kontrol.
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
 
 
-                <div class="prose">
-                    <h1 class="font-bold text-2xl text-gray-600 ml-2">2.2 Alasan Mengapa Suatu Organisasi Perlu
-                        Melakukan Pengembangan Sistem</h1>
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">2 Desain Model Secara Umum
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Sistem analis dapat mendesain model dari sistem informasi yang diusulkan dalam bentuk Physical
+                System & Logical Model. Bentuk Physical System dapat digambarkan dengan system flowchart. Dan
+                Logical Model dapat digambarkan dengan Data Flow Diagram (DFD).</p>
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                Data Flow Diagram
+            </p>
+            <p class="text-lg text-gray-600 ml-10">
+                Data Flow Diagram digunakan untuk menggambarkan suatu sistem yang telah ada atau sistem baru yang
+                akan dikembangkan secara logika.
+            </p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">1.
+                    <span class="  text-gray-600">
+                        Simbol yang digunakan dalam Data Flow Diagram</span>
                     <p class="text-lg text-gray-600 mt-4 ml-10">
-                        Ada beberapa alasan mengapa suatu organisasi perlu melakukan pengembangan sistem. Berikut
-                        beberapa alasan utama:</p>
+                        1).External Entity (Kesatuan Luar) </p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        2).Data Flow (Arus Data)</p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        3).Process (Proses) </p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        4).Data Store (Simpanan Data) </p>
+                </li>
+            </ul>
+            <br>
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                1.External Entity (Kesatuan Luar) </p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <span class="  text-gray-600">
+                        Kesatuan luar merupakan kesatuan (entity) di lingkungan luar sistem yang dapat berupa orang,
+                        organisasi, atau sistem lainnya yang berada di lingkungan luarnya yang akan memberikan input
+                        atau menerima output dari sistem. Kesatuan luar dapat berupa:
+                    </span>
+                </li>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    a. Suatu kantor, departemen, atau divisi dlm perusahaan </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    b. Orang atau sekelompok orang di organisasi tsb
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    c. Suatu organisasi atau orang yg berada di luar organisasi seperti misalnya langganan, pemasok
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    d. Penerima akhir dari suatu laporan yang dihasilkan oleh sistem
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-4">
+                    Simbol: kesatuan luar dapat digambarkan dengan suatu notasi kotak. </p>
+            </ul>
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                2. Data Flow (Arus Data)</p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <span class="  text-gray-600">
+                        Arus data mengalir diantara proses, simpanan data dan kesatuan luar. Arus data ini
+                        menunjukkan arus dari data yang dapat berupa masukan untuk sistem atau hasil dari proses
+                        sistem dan dapat berbentuk sbb:
+                    </span>
+                </li>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    a. Formulir atau dokumen yang digunakan di perusahaan </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    b. Laporan tercetak yang dihasilkan oleh sistem </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    c. Masukan data untuk komputer </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    d. Data yang dibaca atau direkamkan ke suatu file </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    e. Suatu isian yang dicatat pada buku agenda </p>
+                <p class="text-lg text-gray-600 mt-4 ml-4">
+                    Simbol: Arus data dpt digbrkan dengan suatu panah.</p>
+            </ul>
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                3. Process (Proses)</p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <span class="  text-gray-600">
+                        Suatu proses adalah kegiatan atau kerja yang dilakukan oleh orang, mesin atau komputer dari
+                        hasil suatu arus data yang masuk ke dalam proses untuk dihasilkan arus data yang akan keluar
+                        dari proses.
+                    </span>
+                    <p class="text-lg text-gray-600 mt-4 ml-4">
+                        Simbol: Lingkaran.</p>
+                </li>
+            </ul>
 
-                    <ul class="mt-8 space-y-4 ml-10">
-                        <li class=" list-none text-gray-600 text-lg ml-4">a.
-                            <span class="  text-gray-600">
-                                Meningkatkan
-                                Efisiensi Operasional: </span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Sistem baru dapat dirancang untuk mengotomatisasi tugas-tugas rutin, mengurangi
-                                pekerjaan
-                                manual, dan mengoptimalkan proses bisnis. Ini dapat meningkatkan efisiensi
-                                operasional dan
-                                mengurangi biaya operasional.
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">b.
-                            <span class=" text-gray-600">Meningkatkan Produktivitas:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Sistem yang dirancang dengan baik dapat membantu karyawan bekerja lebih cepat dan lebih
-                                efisien, memungkinkan mereka fokus pada tugas-tugas yang lebih berharga daripada
-                                tugas-tugas rutin.
-                            </p>
+            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                4. Data Store (Simpanan Data)</p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <span class="  text-gray-600">
+                        Simpanan data merupakan simpanan dari data yang dapat berupa:
+                    </span>
+                </li>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    a. Suatu file atau database di sistem komputer </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    b. Suatu arsip atau catatan manual </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    c. Suatu tabel acuan manual </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    d. Suatu agenda atau buku </p>
+                <p class="text-lg text-gray-600 mt-4 ml-4">
+                    Simbol:</p>
+                <img src="../Public/4.png" class="float-left mt-10" alt="">
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">2.
+                    <span class="  text-gray-600">
+                        Bentuk Data Flow Diagram</span>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        Terdapat 2 bentuk Data Flow Diagram yaitu Physical Data Flow Diagram (Diag. Arus Dt Fisik) dan
+                        Logical Data Flow Diagram (Diag. Arus Dt Logika). Data Flow Diagram </p>
 
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">c.
-                            <span class=" text-gray-600">Meningkatkan Kualitas Layanan:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Sistem baru dapat memungkinkan organisasi memberikan layanan yang lebih baik kepada
-                                pelanggan atau pemangku kepentingan. Misalnya, sistem informasi pelanggan yang baik
-                                dapat membantu dalam penanganan keluhan pelanggan dengan lebih cepat dan lebih akurat.
+                    <table class="border border-solid border-black mt-4 ml-16">
+                        <tr>
+                            <th class="border border-solid border-black">No</th>
+                            <th class="border border-solid border-black">Kesatuan Luar</th>
+                            <th class="border border-solid border-black">Input</th>
+                            <th class="border border-solid border-black">Output</th>
+                        </tr>
+                        <tr>
+                            <td class="border border-solid border-black">1</td>
+                            <td class="border border-solid border-black">Mahasiswa</td>
+                            <td class="border border-solid border-black">Biodata Mahasiswa</td>
+                            <td class="border border-solid border-black">Kartu Mahasiswa</td>
+                        </tr>
+                    </table>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        Fisik lebih tepat digunakan untuk menggambarkan sistem yang ada (sistem lama) dan lebih
+                        menekankan
+                        pada bagaimana proses dari sistem yang diterapkan. Sedangkan diagram arus data logika digunakan
+                        utk
+                        menggambarkan sistem yang akan diusulkan dan lebih menekankan proses-proses apa yang terdapat
+                        dalam
+                        sistem. </p>
+                </li>
+            </ul>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">3.
+                    <span class="  text-gray-600">
+                        Pedoman Menggambarkan Data Flow Diagram</span>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        1. Identifikasikan terlebih dahulu semua kesatuan luar yang terlibat di sistem. </p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        2. Identifikasikan semua input dan output yang terlibat dengan kesatuan luar.</p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        3. Gambarkanlah terlebih dahulu suatu diagram konteks. Dari diagram konteks ini akan digambar
+                        dengan lebih terinci lagi yang disebut dengan level 0. Tiap-tiap proses di level 0 akan digambar
+                        secara lebih terinci lagi disebut dengan level 1. Tiap-tiap proses di level 1 akan digambar
+                        secara lebih terinci lagi disebut dengan level 2 dst sampai tiap-tiap proses tidak dapat
+                        digambar lebih terinci lagi. </p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        4. Gambarlah bagan berjenjang untuk semua proses yang ada di sistem terlebih dahulu. Bagan
+                        berjenjang digunakan untuk mempersiapkan penggambaran DAD ke level-level lebih bawah lagi. </p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        5. Gambarlah sketsa DAD untuk diagram level 0 berdasarkan proses di bagan berjenjang.</p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        6. Gambarlah DAD utk level-level berikutnya yaitu level 1 dst utk tiap-tiap proses yg
+                        dipecah-pecah sesuai dengan bagan berjenjangnya.</p>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
 
 
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">d.
-                            <span class=" text-gray-600">Mendukung Pertumbuhan Bisnis:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Dengan sistem yang memadai, organisasi dapat lebih mudah mengelola pertumbuhan bisnis
-                                dan menangani volume transaksi yang lebih besar.
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">e.
-                            <span class="  text-gray-600">Memenuhi Kebutuhan Bisnis yang Berkembang:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Bisnis terus berubah, dan persyaratan bisnis juga berubah seiring waktu. Sistem yang
-                                fleksibel dan dapat disesuaikan dapat membantu organisasi menyesuaikan diri dengan
-                                perubahan dalam kebutuhan bisnis.
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">f. <span class=" texgt-gray-600">Meningkatkan
-                                Analisis dan Pengambilan Keputusan:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Sistem informasi yang kuat dapat memberikan data dan analisis yang lebih baik kepada
-                                manajemen, membantu mereka dalam mengambil keputusan yang lebih baik dan berdasarkan
-                                fakta.
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">g. <span class=" text-gray-600">Meningkatkan
-                                Keamanan Informasi:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Sistem yang diperbarui dan dilengkapi dengan fitur keamanan yang tepat dapat membantu
-                                melindungi data sensitif dan mengurangi risiko pelanggaran keamanan.
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">h. <span class=" text-gray-600">Mengikuti
-                                Regulasi dan Kepatuhan:span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Beberapa industri dan sektor mungkin memiliki persyaratan regulasi dan kepatuhan
-                                    yang ketat. Sistem baru dapat dirancang untuk memastikan organisasi mematuhi aturan
-                                    ini.
-                                </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">i. <span class=" text-gray-600">Meningkatkan
-                                Hubungan Pelanggan: </span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Sistem yang memungkinkan pelanggan berinteraksi dengan organisasi dengan lebih mudah dan
-                                nyaman, seperti melalui portal pelanggan atau aplikasi seluler, dapat meningkatkan
-                                hubungan pelanggan.
-                            </p>
-                        </li>
-                        <li class="list-none text-gray-600 text-lg ml-4">j. <span class=" text-gray-600">Menghadapi
-                                Persaingan:</span>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Dalam dunia bisnis yang kompetitif, organisasi perlu terus berinovasi dan mengikuti tren
-                                teknologi. Sistem baru dapat membantu organisasi tetap kompetitif.
-                            </p>
-                        </li>
-                        <p class="text-lg text-gray-600 mt-4 ml-2">
-                            Pengembangan sistem dapat membantu organisasi mencapai berbagai tujuan bisnis dan menghadapi
-                            tantangan yang muncul seiring waktup>
-                    </ul>
-                    <br>
-                    <br>
-                    <br>
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">3 Desain Input Secara Umum
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Langkah-langkah desain input secara umum adalah:</p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">1.
+                    <span class="  text-gray-600">
+                        Menentukan kebutuhan input dari sistem informasi</span>
+                </li>
+                <li class=" list-none text-gray-600 text-lg ml-4">2.
+                    <span class="  text-gray-600">
+                        Menentukan parameter dari desain input tsb.</span>
+                </li>
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        Contoh :</p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        <strong>Data Induk Pegawai</strong>
+                    </p>
+                    <p class="text-lg text-gray-600 ml-10">
+                        Nomor Induk Pegawai:</p>
+                    <p class="text-lg text-gray-600 ml-10">
+                        Nama Pegawai:</p>
+                    <p class="text-lg text-gray-600 ml-10">
+                        Alamat:</p>
+                    <p class="text-lg text-gray-600 ml-10">
+                        Tempat Lahir:</p>
+                    <p class="text-lg text-gray-600 ml-10">
+                        Tanggal Lahir:</p>
+                    <p class="text-lg text-gray-600 ml-10">
+                        Pendidikan:</p>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
 
-                    <div class="prose">
-                        <h1 class="font-bold text-2xl text-gray-600 ml-2">2.3 Prinsip Didalam Pengembangan Sistem</h1>
-                        <p class="text-lg text-gray-600 mt-4 ml-10">
-                            Dalam pengembangan sistem, terdapat beberapa prinsip fundamental yang harus diperhatikan
-                            untuk memastikan keberhasilan proyek dan sistem yang dihasilkan. Berikut adalah beberapa
-                            prinsip utama dalam pengembangan sistem:</p>
 
-                        <ul class="mt-8 space-y-4 ml-10">
-                            <li class=" list-none text-gray-600 text-lg ml-4">a.
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">4 Desain Output Secara Umum
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Langkah-langkah desain output secara umum adalah:</p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">1.
+                    <span class="  text-gray-600">
+                        Menentukan kebutuhan output dari sistem informasi</span>
+                </li>
+                <li class=" list-none text-gray-600 text-lg ml-4">2.
+                    <span class="  text-gray-600">
+                        Menentukan parameter dari desain output tsb.</span>
+                </li>
+                <li class=" list-none text-gray-600 text-lg ml-4">
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        Contoh :</p>
+                    <p class="text-lg text-gray-600 mt-4 ml-10">
+                        <strong>Data Pegawai</strong>
+                    </p>
+                    <table class="border border-solid border-black mt-4 ml-13">
+                        <tr>
+                            <th class="border border-solid border-black">Nip</th>
+                            <th class="border border-solid border-black">Nama</th>
+                            <th class="border border-solid border-black">Alamat</th>
+                            <th class="border border-solid border-black">Tempat Lahir</th>
+                            <th class="border border-solid border-black">Tanggal Lahir</th>
+                            <th class="border border-solid border-black">Pendidikan</th>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">5 Desain Data Base Secara Umum
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Database dibentuk dari kumpulan file. Sedangkan file dibentuk dari kumpulan Record. Dan record dibentuk
+                dari kumpulan field. Sedangkan field merupakan kumpulan dari item data. Item data dapat berupa huruf,
+                angka atau simbol-simbol khusus</p>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Langkah-langkah desain database secara umum:</p>
+            <ul class="mt-5 space-y-4 ml-10">
+                <li class=" list-none text-gray-600 text-lg ml-4">1.
+                    <span class="  text-gray-600">
+                        Menentukan kebutuhan file pada sistem informasi</span>
+                </li>
+                <li class=" list-none text-gray-600 text-lg ml-4">2.
+                    <span class="  text-gray-600">
+                        Menentukan parameter dari desain database tsb. : Type File, Media File, Organisasi File & key
+                        field dari file tsb</span>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <h1 class="font-bold text-2xl text-gray-600 ml-2">6 Desain Teknologi Secara Umum
+            </h1>
+            <p class="text-lg text-gray-600 mt-4 ml-10">
+                Untuk tahap desain teknologi secara umum, langkah pertama perlu dilakukan oleh analis adalah
+                mengidentifikasi jenis dari teknologi yang dibutuhkan, baik yang berkaitan dengan penggunaan hardware
+                (perangkat keras), software (perangkat lunak) dan brainware yaitu personil yang terlibat dengan sistem
+                informasi. Kemudian langkah kedua adalah menentukan jumlah yang dibutuhkan dalam penggunaan hardware
+                maupun software untuk sistem informasi tsb.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+                        <!-- Article Content -->
+                        <div class="prose">
+                            <h1 class="font-bold text-2xl text-gray-600 ml-2">DESAIN SISTEM SECARA TERINCI</h1>
+                            <br>
+                            <h1 class="font-bold text-2xl text-gray-600 ml-2">1 Tujuan Desain Sistem Terinci</h1>
+                            <p class="text-lg text-gray-600 mt-4 ml-10">
+                                Tujuan desain sistem terinci adalah untuk memberikan gambaran yang jelas dan rancang bangun yang
+                                lengkap kepada pemrogram komputer dan ahli teknik lainnya yang akan membangun sistem informasi.
+                                Desain sistem terinci merupakan tahap desain sistem yang mempunyai dua maksud atau tujuan utama,
+                                yaitu untuk memenuhi kebutuhan kepada pemakai sistem dan untuk memberikan gambaran yang jelas dan
+                                rancang bangun yang lengkap kepada pemrogram komputer dan ahli teknik lainnya yang akan membangun
+                                sistem informasi
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+            
+            
+                        <h1 class="font-bold text-2xl text-gray-600 ml-2">2 Komponen-komponen yang terdapat di dalam Desain Sistem
+                            Terinci
+                        </h1>
+            
+                        <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                            1.Desain Input Terinci </p>
+                        <ul class="mt-5 space-y-4 ml-10">
+                            <li class=" list-none text-gray-600 text-lg ml-4">
                                 <span class="  text-gray-600">
-                                    Memahami Kebutuhan Bisnis:</span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Analisis kebutuhan bisnis adalah langkah pertama yang penting. Penting untuk
-                                    memahami sepenuhnya kebutuhan dan tujuan organisasi sebelum merancang atau
-                                    mengembangkan sistem.
-                                </p>
+                                    Masukan (input) merupakan awal dimulainya proses informasi. Bahan mentah dari informasi
+                                    adalah data yg terjadi dari transaksi-transaksi yg dilakukan oleh organisasi.. Data hasil dari
+                                    transaksi merupakan masukan untuk sistem informasi.
+                                    Dokumen dasar merupakan formulir yang digunakan untuk menangkap (capture) data yang
+                                    terjadi. Data yang sudah dicatat di dokumen dasar kemudian dimasukkan sebagai input ke
+                                    sistem informasi untuk diolah.
+                                </span>
                             </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">b.
-                                <span class=" text-gray-600"> Berfokus pada Pengguna Akhir: </span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Pengguna akhir sistem harus menjadi fokus utama. Sistem harus dirancang dan
-                                    dikembangkan dengan mempertimbangkan kebutuhan dan preferensi pengguna agar sistem
-                                    dapat digunakan dengan nyaman dan efektif.
-                                </p>
-
+                            <p class="text-lg text-gray-600 mt-4 ml-4 font-bold">
+                                Mengatur Tataletak Isi Input </p>
+                            <p class="text-lg text-gray-600 mt-4 ml-4">
+                                Tujuannya</p>
+                            <p class="text-lg text-gray-600 mt-4 ml-10">
+                                1. Bagi pemakai sistem digunakan untuk menilai isi dan bentuk dari input apakah sudah
+                                sesuai dengan yang diinginkan atau belum.
+                            </p>
+                            <p class="text-lg text-gray-600 mt-4 ml-10">
+                                2. Bagi programmer akan digunakan sebagai dasar pembuatan program untuk menghasilkan
+                                input yang diinginkan. Programmer membutuhkan desain input ini untuk menentukan
+                                posisi kolom, baris dan informasi yang harus disajikan di suatu input. </p>
+                        </ul>
+            
+                        <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                            2.Desain Output Terinci </p>
+                        <ul class="mt-5 space-y-4 ml-10">
+                            <li class=" list-none text-gray-600 text-lg ml-4">
+                                <span class="  text-gray-600">
+                                    Pada tahap desain output secara umum, desain output ini hanya dimaksudkan untuk
+                                    menentukan kebutuhan output dari sistem baru. Output apa saja yang dibutuhkan untuk
+                                    sistem yang baru? Desain output secara umum dimaksudkan untuk menjawab pertanyaan
+                                    ini. Bagaimana dan seperti apa bentuk dari output-output tersebut? Desain output terinci
+                                    dimaksudkan untuk menjawab pertanyaan ini. Desain output yang akan dibahas pada bab
+                                    ini adalah untuk output berbentuk laporan di media keras seperti kertas. Desain output di
+                                    media lunak dalam bentuk dialog di layar terminal akan dibahas selanjutnya
+                                </span>
                             </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">c.
-                                <span class=" text-gray-600">Kesesuaian dengan Tujuan Bisnis:</span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Setiap komponen sistem dan fitur yang dikembangkan harus berkontribusi langsung
-                                    terhadap mencapai tujuan bisnis organisasi. Tidak ada fitur atau fungsi yang
-                                    seharusnya "hanya untuk gaya" tanpa alasan yang jelas.
-                                </p>
-
+                            <p class="text-lg text-gray-600 mt-4 ml-4 font-bold">
+                                Bentuk Laporan </p>
+                            <p class="text-lg text-gray-600 mt-4 ml-4">
+                                Bentuk dari laporan yang dihasilkan oleh sistem informasi, yang paling banyak digunakan adalah
+                                dalam bentuk tabel dan berbentuk grafik atau bagan</p>
+                            <p class="text-lg text-gray-600 mt-4 ml-4 font-bold">
+                                Mengatur Tata Letak Isi Outout </p>
+                            <p class="text-lg text-gray-600 mt-4 ml-4">
+                                Pengaturan isi dari output akan secara langsung menentukan kemudahan dari output untuk
+                                dipahami dan dimengerti. Pengaturan tata letak output merupakan pekerjaan desain yang penting
+                                dan sangat diperlukan baik bagi pemakai sistem maupun bagi programmer. Bagi pemakai sistem
+                                digunakan untuk menilai isi dan bentuk dari output apakah sudah sesuai dengan yang diinginkan
+                                atau belum.<br>Bagi programmer akan digunakan sebagai dasar pembuatan program untuk menghasilkan
+                                output
+                                yang diinginkan. Programmer membutuhkan desain output ini untuk menentukan posisi kolom,
+                                baris dan informasi yang harus disajikan di suatu output. Pengaturan tata letak isi output yg akan
+                                dicetak di printer dapat digunakan alat bagan tata letak printer (printer layout chart) dan kamus
+                                data output.</p>
+            
+                        </ul>
+            
+                        <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                            3.Desain Dialog Layar Terminal </p>
+                        <ul class="mt-5 space-y-4 ml-10">
+                            <li class=" list-none text-gray-600 text-lg ml-4">
+                                <span class="  text-gray-600">
+                                    Merupakan rancang bangun dari percakapan antara pemakai sistem (user) dengan komputer.
+                                    Percakapan ini dapat terdiri dari proses memasukkan data ke sistem, menampilkan output
+                                    informasi kepada user atau dapat keduanya.
+                                </span>
                             </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">d.
-                                <span class=" text-gray-600">Rekayasa Perangkat Lunak yang Baik:</span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Pengembangan sistem harus mengikuti praktik rekayasa perangkat lunak yang baik. Ini
-                                    mencakup pemilihan bahasa pemrograman yang sesuai, perancangan yang baik, pengkodean
-                                    yang bersih, dan pengujian yang komprehensif.
-                                </p>
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">e.
-                                <span class="  text-gray-600">Fleksibilitas dan Skalabilitas:</span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Sistem harus dirancang dengan kemampuan untuk berkembang seiring waktu. Ini termasuk
-                                    kemampuan untuk menambahkan fitur baru, mengakomodasi pertumbuhan bisnis, dan
-                                    mengikuti perkembangan teknologi.
-                                </p>
-
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">f. <span
-                                    class=" texgt-gray-600">Keselamatan dan Keamanan:</span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Keamanan data dan sistem adalah prioritas. Sistem harus dilengkapi dengan
-                                    perlindungan yang memadai untuk melindungi data sensitif dan mencegah
-                                    pelanggaran keamanan.
-                                </p>
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">g. <span class=" text-gray-600"> Pengujian
-                                    dan Validasi: </span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Pengujian sistem yang cermat dan komprehensif diperlukan sepanjang siklus
-                                    pengembangan. Ini termasuk pengujian fungsional, integrasi, kinerja, dan keamanan.
-
-
-                                </p>
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">h. <span class=" text-gray-600">Dokumentasi
-                                    yang Baik:</span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Setiap tahap pengembangan, termasuk perancangan, pengkodean, dan pengujian, harus
-                                    didokumentasikan secara rinci. Dokumentasi yang baik membantu dalam pemeliharaan
-                                    sistem dan pelatihan pengguna.
-                                </p>
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">i. <span class=" text-gray-600">Manajemen
-                                    Proyek yang Efektif: </span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Manajemen proyek yang efisien adalah kunci kesuksesan pengembangan sistem. Hal ini
-                                    melibatkan perencanaan yang baik, pengendalian biaya, manajemen risiko, dan
-                                    komunikasi yang efektif.
-                                </p>
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">j. <span class=" text-gray-600">Kualitas
-                                    Lebih Penting daripada Kuantitas: </span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Lebih baik memiliki sedikit fitur atau fungsi yang berkualitas tinggi daripada
-                                    banyak fitur yang tidak berfungsi dengan baik. Kualitas harus menjadi prioritas.
-                                </p>
-                            </li>
-                            <li class="list-none text-gray-600 text-lg ml-4">k. <span class=" text-gray-600">Evaluasi
-                                    Rutin: </span>
-                                <p class="text-lg text-gray-600 mt-4 ml-10">
-                                    Sistem yang dikembangkan harus secara rutin dievaluasi untuk memastikan bahwa mereka
-                                    tetap relevan, berkinerja baik, dan memenuhi tujuan bisnis.
-                                </p>
+                            <p class="text-lg text-gray-600 mt-4 ml-4 font-bold">
+                                Terdapat beberapa strategi membuat dialog layar komputer:
+                            </p>
+            
+                            <p class="text-lg text-gray-600 mt-4 ml-10">
+                                1. MENU. Banyak digunakan dalam dialog karena merupakan jalur pemakai (user
+                                interface) yang mudah dipahami dan mudah digunakan. Menu berisi dengan beberapa
+                                alternatif atau option atau pilihan yang disajikan kepada user. User dapat memilih pilihan
+                                di menu dengan cara menekan tombol angka atau huruf yang dihubungkan dengan
+                                pilihan tersebut.
+                            </p>
+                            <p class="text-lg text-gray-600 mt-4 ml-10">
+                                2. Kumpulan Instruksi (Instruction Set). Strategi dialog ini dilakukan dengan menuliskan
+                                suatu instruksi oleh user dan sistem akan mengartikan instruksi ini serta memberikan
+                                respon jawaban.</p>
+                            <p class="text-lg text-gray-600 mt-4 ml-10">
+                                3. ialog Pertanyaan/Jawaban (Question/Answer Dialog). Sistem akan menampilkan
+                                terlebih dahulu pertanyaan dan user menjawabnya untuk mendapatkan respon lebih lanjut
+                                dari sistem.</p>
+                        </ul>
+            
+                        <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                            4.Desain Data Base Terinci </p>
+                        <ul class="mt-5 space-y-4 ml-10">
+                            <li class=" list-none text-gray-600 text-lg ml-4">
+                                <span class="  text-gray-600">
+                                    Di tahap desain secara umum sebelumnya, desain database hanya dimaksudkan untuk
+                                    mengidentifikasikan kebutuhan file-file database yang diperlukan oleh sistem informasi
+                                    saja. Pada tahap desain terinci ini, desain database dimaksudkan untuk mendefiniskan isi
+                                    atau struktur dari tiap-tiap file yang telah diidentifikasikan di desain secara umum.
+                                    Elemen-elemen data di suatu file database harus dapat digunakan untuk pembuatan suatu
+                                    output. Demikian juga dengan input yang akan direkamkan di database, file-file database
+                                    harus mempunyai elemen-elemen untuk menampung input yang dimasukkan. Untuk
+                                    dapat merancang database terinci digunakan teknik <strong>normalisasi.</strong>
+                                </span>
                             </li>
                         </ul>
-                        <br>
-                        <br>
-                        <br>
-
-
-                        <div class="prose">
-                            <h1 class="font-bold text-2xl text-gray-600 ml-2">2.4 Tahapan Di Dalam Pengembangan Sistem
-                            </h1>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Tahapan dalam pengembangan sistem dapat bervariasi tergantung pada metodologi yang
-                                digunakan dan kompleksitas proyek, namun umumnya ada beberapa tahapan inti yang ditemui
-                                dalam hampir setiap proyek pengembangan sistem.</p>
-
-                            <ul class="mt-8 space-y-4 ml-10">
-                                <li class=" list-none text-gray-600 text-lg ml-4">a.
-                                    <span class="  text-gray-600">
-                                        Perencanaan sistem</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Tahap ini meliputi identifikasi masalah, analisis kebutuhan, dan perencanaan
-                                        sistem. Identifikasi masalah dilakukan untuk mengidentifikasi masalah yang
-                                        dihadapi perusahaan dan sistem yang dimilikinya. Analisis kebutuhan dilakukan
-                                        untuk memberikan gambaran secara umum tentang kebutuhan informasi kepada pemakai
-                                        sistem atau pengguna. Perencanaan sistem dilakukan untuk merancang sistem secara
-                                        umum dan terinci.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">b.
-                                    <span class=" text-gray-600"> Analisis sistem</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Tahap ini meliputi analisis kebutuhan, analisis sistem, dan perancangan sistem
-                                        secara umum/konseptual. Analisis kebutuhan dilakukan untuk memberikan gambaran
-                                        secara jelas tentang kebutuhan informasi kepada pemakai sistem atau pengguna.
-                                        Analisis sistem dilakukan untuk memberikan gambaran secara umum kepada pengguna
-                                        sistem informasi mengenai sistem informasi yang akan dibangun. Perancangan
-                                        sistem secara umum/konseptual dilakukan untuk memberikan gambaran secara jelas
-                                        dan rancang bangun yang lengkap kepada development tim.
-                                    </p>
-
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">c.
-                                    <span class=" text-gray-600"> Perancangan sistem</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Tahap ini meliputi perancangan sistem secara terinci, implementasi, dan
-                                        pengujian. Perancangan sistem secara terinci dilakukan untuk memberikan gambaran
-                                        secara jelas dan rancang bangun yang lengkap kepada development tim.
-                                        Implementasi dilakukan untuk membuat atau mengembangkan sistem informasi sesuai
-                                        rancangan yang sudah dibuat. Pengujian dilakukan untuk mengetahui kinerja dari
-                                        sistem informasi yang sudah dibuat oleh tim development.
-                                    </p>
-
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">d.
-                                    <span class=" text-gray-600">Implementasi</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Tahap ini meliputi migrasi data (konversi), pelatihan pengguna, dan instalasi
-                                        sistem.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">e.
-                                    <span class="  text-gray-600">Pengujian</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Tahap ini meliputi pengujian kualitas software, pengujian ke pengguna, dan
-                                        pengujian performa.
-                                    </p>
-
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">f. <span
-                                        class=" texgt-gray-600">Perubahan dan pemeliharaan</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Tahap ini meliputi perbaikan dan perubahan sistem, serta pemeliharaan sistem.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-
-                        <div class="prose">
-                            <h1 class="font-bold text-2xl text-gray-600 ml-2">2.5 Metodologi Di Dalam
-                                Mengembangan Sistem</h1>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Dalam pengembangan sistem, terdapat berbagai metodologi yang dapat digunakan
-                                untuk membantu tim pengembangan merencanakan, merancang, dan mengelola proyek
-                                dengan lebih efisien. Berikut beberapa metodologi pengembangan sistem yang umum
-                                digunakan:</p>
-
-                            <ul class="mt-8 space-y-4 ml-10">
-                                <li class=" list-none text-gray-600 text-lg ml-4">1.
-                                    <span class="  text-gray-600">
-                                        Metodologi Waterfall:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi Waterfall adalah pendekatan linier dan berurutan dalam
-                                        pengembangan sistem.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Proyek dibagi menjadi tahapan yang berurutan, seperti analisis,
-                                        perancangan, pengembangan, pengujian, dan implementasi.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Setiap tahap harus selesai sebelum memasuki tahap berikutnya.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Cocok untuk proyek dengan persyaratan yang stabil dan jelas.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">2.
-                                    <span class=" text-gray-600"> Metodologi Model Spiral: </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi Model Incremental membagi proyek menjadi modul atau
-                                        inkremen.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Setiap inkremen adalah versi tambahan dari sistem yang ada, dengan
-                                        fitur tambahan atau perubahan dari inkremen sebelumnya.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Setiap inkremen membangun di atas yang sebelumnya, sehingga sistem
-                                        berkembang secara bertahap.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">3.
-                                    <span class=" text-gray-600">Metodologi Model Agile:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi Agile adalah kelompok metodologi yang fleksibel dan
-                                        kolaboratif, seperti Scrum, Kanban, dan Extreme Programming (XP).
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Berfokus pada kolaborasi tim, komunikasi yang kuat, dan perubahan
-                                        perubahan fleksibel dalam proyek.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Mengutamakan pengerjaan iteratif, pengujian berulang, dan pengiriman
-                                        perangkat lunak yang berfungsi dengan cepat.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">4.
-                                    <span class=" text-gray-600">Metodologi Model Incremental:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi Model Incremental membagi proyek menjadi modul atau
-                                        inkremen.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Setiap inkremen adalah versi tambahan dari sistem yang ada, dengan
-                                        fitur tambahan atau perubahan dari inkremen sebelumnya.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Setiap inkremen membangun di atas yang sebelumnya, sehingga sistem
-                                        berkembang secara bertahap.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">5.
-                                    <span class="  text-gray-600">Metodologi Model RAD (Rapid Application
-                                        Development):</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi RAD adalah pendekatan yang berorientasi pada cepatnya
-                                        pengembangan perangkat lunak.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Menggabungkan pengembangan perangkat lunak dengan desain dan pengujian
-                                        secara paralel.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Menggunakan prototipe untuk mendapatkan umpan balik dari pengguna
-                                        lebih awal dalam proses pengembangan.
-                                    </p>
-
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">6. <span
-                                        class=" texgt-gray-600">Metodologi Model DevOps:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · DevOps adalah metodologi yang menggabungkan pengembangan (Development)
-                                        dan operasi (Operations) untuk mencapai integrasi dan pengiriman
-                                        perangkat lunak yang lebih cepat.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Fokus pada otomatisasi, kolaborasi tim, dan perubahan cepat dalam
-                                        lingkungan produksi.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">7. <span class=" text-gray-600">
-                                        Metodologi Lean Software Development: </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi Lean Software Development terinspirasi oleh prinsip Lean
-                                        Manufacturing.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Berfokus pada menghilangkan limbah dalam pengembangan perangkat lunak,
-                                        termasuk fitur yang tidak diperlukan, proses yang berlebihan, dan
-                                        penundaan.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">8. <span
-                                        class=" text-gray-600">Metodologi Model Big Bang:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi Model Big Bang adalah pendekatan non-struktural di mana
-                                        pengembangan dimulai tanpa perencanaan formal yang jelas.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Cocok untuk proyek kecil atau eksperimen yang tidak memiliki
-                                        persyaratan yang pasti.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Pemilihan metodologi tergantung pada jenis proyek, persyaratan,
-                                        kebutuhan bisnis, dan preferensi tim pengembangan.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-
-
-                        <div class="prose">
-                            <h1 class="font-bold text-2xl text-gray-600 ml-2">2.6 Pendekatan Di Dalam
-                                Pengembangan Sistem
-                            </h1>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Pendekatan dalam pengembangan sistem adalah suatu metode atau kerangka
-                                kerja yang digunakan untuk merancang, mengembangkan, menguji, dan
-                                mengimplementasikan aplikasi perangkat lunak baru atau memperbaiki
-                                sistem yang telah ada. Berikut adalah beberapa pendekatan yang dapat
-                                digunakan dalam pengembangan sistem:</p>
-
-                            <ul class="mt-8 space-y-4 ml-10">
-                                <li class=" list-none text-gray-600 text-lg ml-4">1.
-                                    <span class="  text-gray-600">
-                                        Pendekatan klasik atau tradisional</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Pendekatan ini adalah pendekatan yang paling tua dan paling
-                                        sederhana dalam pengembangan sistem. Pendekatan ini menekankan
-                                        pada tahapan-tahapan yang harus dilakukan dalam pengembangan
-                                        sistem, seperti analisis, desain, pengkodean, pengujian, dan
-                                        implementasi.
-                                    </p>
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">2.
-                                    <span class=" text-gray-600"> Pendekatan terstruktur</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Pendekatan ini dimulai pada awal tahun 1970 dan dilengkapi
-                                        dengan alat-alat dan teknik-teknik yang dibutuhkan dalam
-                                        pengembangan sistem. Pendekatan ini menekankan pada struktur
-                                        sistem yang didefinisikan dengan baik dan jelas.
-                                    </p>
-
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">3.
-                                    <span class=" text-gray-600">Pendekatan sepotong atau
-                                        piecemeal</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Pendekatan ini menekankan pada suatu kegiatan atau aplikasi
-                                        tertentu saja. Pada pendekatan ini, kegiatan atau aplikasi yang
-                                        dipilih dikembangkan tanpa memperhatikan posisinya di sistem
-                                        informasi atau tanpa memperhatikan sasaran keseluruhan dari
-                                        organisasi.
-                                    </p>
-
-                                </li>
-                                <li class="list-none text-gray-600 text-lg ml-4">4.
-                                    <span class=" text-gray-600">Pendekatan sistem atau systems
-                                        approach</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        Pendekatan ini menekankan pada sistem informasi sebagai satu
-                                        kesatuan terintegrasi untuk masing-masing kegiatan atau
-                                        aplikasinya. Pendekatan ini dimulai dengan mendefinisikan
-                                        sasaran dan kebijaksanaan organisasi.
-                                    </p>
-                                </li>
-                                <p class="text-lg text-gray-600 mt-4 ml-2">
-                                    Pemilihan pendekatan yang tepat dapat membantu dalam menunjang
-                                    proses pengambilan keputusan, koordinasi, dan pengawasan, serta
-                                    membantu manajer dan karyawan menganalisis permasalahan,
-                                    menggambarkan hal-hal yang rumit, dan menciptakan produk baru.</p>
-                            </ul>
-                            </h1>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-
-
-                        <div class="prose">
-                            <h1 class="font-bold text-2xl text-gray-600 ml-2">2.7 Alat & Teknik Di Dalam Pengembangan
-                                Sistem</h1>
-                            <p class="text-lg text-gray-600 mt-4 ml-10">
-                                Berikut adalah beberapa alat dan teknik yang umum digunakan dalam pengembangan sistem:
-                            </p>
-                            <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
-                                Alat dalam Pengembangan Sistem:
-                            </p>
-
-                            <ul class="mt-8 space-y-4 ml-10 ">
-                                <li class=" list-none text-gray-600 text-lg ml-4">1.
-                                    <span class="  text-gray-600 ">
-                                        Integrated Development Environments (IDEs):</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · IDEs seperti Visual Studio, Eclipse, atau IntelliJ IDEA menyediakan lingkungan
-                                        terpadu untuk menulis, menguji, dan mengelola kode.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Mereka biasanya memiliki fitur-fitur seperti pengeditan kode, debugging, dan
-                                        manajemen proyek.
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">2.
-                                    <span class="  text-gray-600 ">
-                                        Version Control Systems (VCS):
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · VCS seperti Git, Subversion, atau Mercurial digunakan untuk mengelola kode
-                                        sumber proyek, melacak perubahan, dan kolaborasi tim.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">3.
-                                    <span class="  text-gray-600 ">
-                                        Database Management Systems (DBMS):
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · DBMS seperti MySQL, PostgreSQL, atau MongoDB digunakan untuk mengelola basis
-                                        data dalam aplikasi.
-                                    </p>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Mereka menyediakan alat untuk mendefinisikan, mengakses, dan mengelola data.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">4.
-                                    <span class="  text-gray-600 ">
-                                        Unified Modeling Language (UML) Tools:
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Alat pemodelan UML seperti Enterprise Architect atau Lucidchart digunakan
-                                        untuk merancang dan mendokumentasikan struktur dan perilaku sistem.
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">5.
-                                    <span class="  text-gray-600 ">
-                                        Prototyping Tools:
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Alat prototyping seperti Balsamiq, Sketch, atau Adobe XD membantu dalam
-                                        membuat prototipe interaktif sistem untuk pemahaman yang lebih baik dan
-                                        validasi.
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">5.
-                                    <span class="  text-gray-600 ">
-                                        Project Management Software:
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Perangkat lunak manajemen proyek seperti Microsoft Project, Trello, atau Jira
-                                        digunakan untuk merencanakan, mengelola, dan melacak proyek pengembangan.
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">6.
-                                    <span class="  text-gray-600 ">
-                                        Continuous Integration and Continuous Deployment (CI/CD) Tools:
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Alat CI/CD seperti Jenkins, Travis CI, atau CircleCI memungkinkan otomatisasi
-                                        pengujian, pengiriman, dan penyebaran perangkat lunak.
-                                </li>
-                            </ul>
-                            <p class="text-lg text-gray-600 mt-6 ml-10 font-bold">
-                                Teknik dalam Pengembangan Sistem:
-                            </p>
-
-                            <ul class="mt-8 space-y-4 ml-10 ">
-                                <li class=" list-none text-gray-600 text-lg ml-4">1.
-                                    <span class="  text-gray-600 ">
-                                        Gathering Techniques:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Teknik pengumpulan persyaratan seperti wawancara, studi dokumen, atau survey
-                                        digunakan untuk memahami kebutuhan pemangku kepentingan.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">2.
-                                    <span class="  text-gray-600 ">
-                                        System Analysis Techniques:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Teknik analisis sistem seperti analisis SWOT, analisis kebutuhan, atau
-                                        analisis proses membantu dalam merinci persyaratan sistem.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">3.
-                                    <span class="  text-gray-600 ">
-                                        System Design Methods:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metode perancangan sistem seperti DFD (Data Flow Diagram), ERD
-                                        (Entity-Relationship Diagram), atau desain arsitektur digunakan untuk merancang
-                                        struktur sistem.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">4.
-                                    <span class="  text-gray-600 ">
-                                        Testing Techniques:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Teknik pengujian termasuk uji fungsional, uji integrasi, uji performa, dan uji
-                                        keamanan yang digunakan untuk memastikan kualitas dan keandalan sistem.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">5.
-                                    <span class="  text-gray-600 ">
-                                        Agile and Scrum Methodologies:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metodologi pengembangan perangkat lunak seperti Agile dan Scrum digunakan
-                                        untuk manajemen proyek yang adaptif dan kolaboratif.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">6.
-                                    <span class="  text-gray-600 ">
-                                        Security Assessment Methods:
-                                    </span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Metode evaluasi keamanan seperti uji penetrasi dan analisis keamanan digunakan
-                                        untuk mengidentifikasi dan mengatasi kerentanan keamanan dalam sistem.
-                                    </p>
-                                </li>
-                                <li class=" list-none text-gray-600 text-lg ml-4">7.
-                                    <span class="  text-gray-600 ">
-                                        Change Management Strategies:</span>
-                                    <p class="text-lg text-gray-600 mt-4 ml-10">
-                                        · Strategi manajemen perubahan membantu dalam mengelola perubahan dalam sistem
-                                        dan memastikan adopsi yang sukses oleh pengguna.
-                                    </p>
-                                </li>
-                                <p class="text-lg text-gray-600 mt-4 ml-2">
-                                    Alat dan teknik di atas adalah sebagian kecil dari berbagai alat dan teknik yang
-                                    digunakan dalam pengembangan sistem. Pilihan alat dan teknik akan sangat tergantung
-                                    pada jenis proyek, tujuan, dan persyaratan khusus.
-                                </p>
-                            </ul>
-                        </div> -->
+            
+                        <p class="text-lg text-gray-600 mt-4 ml-10 font-bold">
+                            5.Desain Teknologi Terinci </p>
+                        <ul class="mt-5 space-y-4 ml-10">
+                            <li class=" list-none text-gray-600 text-lg ml-4">
+                                <span class="  text-gray-600">
+                                    Pada desain teknologi secara umum telah ditentukan jenis dan jumlah dari teknologi yang
+                                    akan digunakan. Yang belum didefinisikan secara pasti pada tahap ini adalah kapasitas dari
+                                    teknologi simpanan luar yang akan digunakan. Kapasitas simpanan luar yang telah didefinisikan
+                                    pada tahap desain secara umum hanya ditaksir secara kira-kira terlebih dahulu berdasarkan
+                                    pengalaman analis sistem. <br>
+                                    Setelah file-file database berhasil didesain secara rinci, kebutuhan kapasitas simpanan
+                                    luar sekarang dapat dihitung dengan lebih tepat. Besarnya kapasitas simpanan luar yg dibutuhkan
+                                    oleh sistem informasi dapat dihitung berdasarkan besarnya file-file database yg akan menyimpan
+                                    data untuk satu periode tertentu.
+                                </span>
+                            </li>
+                        </ul>
 
 
 
