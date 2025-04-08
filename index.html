@@ -9,9 +9,29 @@
     <link rel="icon" href="./Public/UMC.png">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.4/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 's' || e.key === 'a')) {
+                return false;
+            }
+            if (e.key === 'F12') {
+                return false;
+            }
+        };
+    </script>
 
 
     <style>
+                body {
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+        }
         @keyframes slideInFromLeft {
             from {
                 opacity: 0;
@@ -112,7 +132,14 @@
     </style>
 </head>
 
-<body class="bg-gray-100">
+
+<body 
+    class="bg-gray-100" 
+    oncontextmenu="return false;" 
+    onselectstart="return false;" 
+    ondragstart="return false;" 
+    onmousedown="return false;">
+
 
     <header class="absolute inset-x-0 top-0 z-50 items-center justify-center">
         <nav id="navbar"
@@ -346,7 +373,7 @@
     <div class="mt-18">
         <footer class="bg-footer text-gray-600 p-2 shadow-inner">
             <div class="container mx-auto text-center">
-                <p>&copy; 2025 Ahmad Maulana. All rights reserved.</p>
+                <p>&copy; 2023 Ahmad Maulana. All rights reserved.</p>
             </div>
         </footer>
     </div>
