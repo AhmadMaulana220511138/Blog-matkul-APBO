@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmad Maulana</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 's' || e.key === 'a')) {
+                return false;
+            }
+            if (e.key === 'F12') {
+                return false;
+            }
+        };
+    </script>
+    <style>
+                        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+        }
+    </style>
 </head>
 
-<body>
+<body 
+    class="bg-gray-100" 
+    oncontextmenu="return false;" 
+    onselectstart="return false;" 
+    ondragstart="return false;" 
+    onmousedown="return false;">
+    
     <header class="absolute inset-x-0 top-0 z-50 items-center justify-center">
         <nav id="navbar"
             class="flex items-center justify-between p-6 shadow-lg lg:px-8 fixed top-0 w-full bg-transparent z-50 backdrop-blur-md"
@@ -1296,7 +1324,7 @@
     <div class="mt-18">
         <footer class="bg-footer text-gray-600 p-2 shadow-inner">
             <div class="container mx-auto text-center">
-                <p>&copy; 2025 Ahmad Maulana. All rights reserved.</p>
+                <p>&copy; 2023 Ahmad Maulana. All rights reserved.</p>
             </div>
         </footer>
     </div>
