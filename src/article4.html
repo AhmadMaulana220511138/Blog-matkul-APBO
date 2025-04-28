@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Maulana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 's' || e.key === 'a')) {
+                return false;
+            }
+            if (e.key === 'F12') {
+                return false;
+            }
+        };
+    </script>
+    <style>
+                        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gray-100" 
+    oncontextmenu="return false;" 
+    onselectstart="return false;" 
+    ondragstart="return false;" 
+    onmousedown="return false;">
+    
+    <header class="absolute inset-x-0 top-0 z-50 items-center justify-center">
+        <nav id="navbar"
+            class="flex items-center justify-between p-6 shadow-lg lg:px-8 fixed top-0 w-full bg-transparent z-50 backdrop-blur-md"
+            aria-label="Global">
+            <div class="lg:flex space-x-4">
+                <a href="#hero"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Ahmad
+                    <span class="text-blue-500 hover:text-purple-600">Maulana</span></a>
+                <a href="../index.html"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Home</a>
+                <a href="#Materi"
+                    class="text-sm font-semibold leading-6 text-gray-900 hover:tracking-widest transition-all duration-500 hover:scale-110 hover:text-purple-600">Materi</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/a.hmadmaulana/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../public/instagram-2016-logo-svgrepo-com.svg"
+                        class="w-8 h-8 hover:scale-110 transition-all duration-500" alt="">
+                </a>
+
+            </div>
+        </nav>
+
+        </div>
+    </header>
+
+    <!-- Article -->
+    <section class="container mx-auto mt-24">
+
+        <!-- Article Container -->
+        <article class="bg-white p-6 rounded-2xl shadow-2xl border border-gray-300">
+
+            <!-- Article Header -->
+            <header class="mb-6">
+                <h1 class="text-2xl font-bold text-gray-600">BAB 4. PEMBAHASAN MATERI MENGENAI UML</h1>
+            </header>
+            <br>
+            <br>
+            <br>
+            <!-- Article Content -->
+            <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">Apa itu UML?</h1>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    UML (Unified Modeling Language) adalah bahasa standar untuk memvisualisasikan, mendesain, dan mendokumentasikan sistem perangkat lunak. Dengan UML, kita bisa menggambarkan bagaimana sistem bekerja sebelum kita mulai coding.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    UML membantu tim pengembang memahami:
+                </p>
+                <ul class="mt-5 space-y-4 ml-10">
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        1. <span class="text-gray-600"><strong>Alur sistem</strong></span>
+                    </li>
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        2. <span class="text-gray-600"><strong>Hubungan antar komponen</strong></span>
+                    </li>
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        3. <span class="text-gray-600"><strong>Interaksi antar pengguna dan sistem</strong></span>
+                    </li>
+                </ul>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Ada banyak jenis diagram di UML, tapi hari ini kita fokus pada 4 diagram penting: <strong>Use Case Diagram, Activity Diagram, Class Diagram,</strong> dan <strong>Sequence Diagram</strong>.
+                </p>
+            </div>
+            
+            <br><br>
+            
+            <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">1. Use Case Diagram</h1>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Use Case Diagram adalah salah satu jenis diagram dalam UML yang digunakan untuk menggambarkan fungsi-fungsi utama yang dapat dilakukan dalam suatu sistem dari perspektif pengguna atau aktor. Diagram ini menyoroti interaksi antara aktor (pengguna atau sistem lain) dengan sistem yang dikembangkan.
+                    Use Case Diagram digunakan untuk memahami dan memvisualisasikan fungsionalitas sistem secara keseluruhan. Ini memberi gambaran yang jelas tentang siapa yang akan menggunakan sistem dan apa yang mereka harapkan dapat dilakukan sistem untuk mereka. Biasanya, Use Case Diagram digunakan pada tahap awal perancangan sistem untuk menetapkan apa saja yang akan dicapai oleh sistem.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Contoh Project:</strong> Perancangan sistem informasi pengaduan fasilitas berbasis web.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Perancangan Use Case Diagram:</strong>
+                </p>
+            
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Aktor:</strong>
+                </p>
+                <ul class="mt-5 space-y-4 ml-10">
+                    <li class="list-none text-gray-600 text-lg ml-4">1. <span class="text-gray-600">User/Pengguna (Mahasiswa/Pengunjung)</span></li>
+                    <li class="list-none text-gray-600 text-lg ml-4">2. <span class="text-gray-600">Admin</span></li>
+                </ul>
+            
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Use Case:</strong>
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>User:</strong>
+                </p>
+                <ul class="mt-5 space-y-4 ml-10">
+                    <li class="list-none text-gray-600 text-lg ml-4">- Registrasi akun</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Login</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Buat pengaduan</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Lihat status pengaduan</li>
+                </ul>
+            
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Admin:</strong>
+                </p>
+                <ul class="mt-5 space-y-4 ml-10">
+                    <li class="list-none text-gray-600 text-lg ml-4">- Login</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Verifikasi pengaduan</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Tanggapi pengaduan</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Update status pengaduan</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">- Kelola data pengaduan</li>
+                </ul>
+            
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Relasi:</strong>
+                </p>
+                <ul class="mt-5 space-y-4 ml-10">
+                    <li class="list-none text-gray-600 text-lg ml-4">User → Registrasi, Login, Buat Pengaduan, Lihat Status</li>
+                    <li class="list-none text-gray-600 text-lg ml-4">Admin → Login, Verifikasi, Tanggapi, Update Status, Kelola Data</li>
+                </ul>
+            
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Gambar Use Case Diagram:</strong>
+                </p>
+                <div class="flex flex-col items-center mt-4">
+                    <img src="/Public/img/article4/use case sistem informasi pengaduan fasilitas kampus.jpg"  alt="Use Case Diagram" class="w-full max-w-md mx-auto shadow-md">
+                </div>
+            </div>
+            
+            <br><br>
+
+            <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">2. Activity Diagram</h1>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Activity Diagram adalah diagram yang menggambarkan alur aktivitas atau proses dalam sistem. Diagram ini mirip dengan flowchart, namun lebih terstruktur dan bisa menggambarkan proses yang lebih kompleks dengan lebih banyak elemen.Activity Diagram berfokus pada alur kerja dan bagaimana aktivitas tersebut dikendalikan dalam sistem. Diagram ini berguna untuk memvisualisasikan proses bisnis atau alur kerja sistem dan memahami bagaimana tindakan pengguna atau sistem akan bergerak dalam urutan tertentu.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Contoh Project:</strong> Perancangan sistem informasi pengaduan fasilitas berbasis web.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Perancangan Activity Diagram:</strong>
+                </p>
+            
+                <h2 class="font-bold text-xl text-gray-600 ml-10 mt-6">Activity Diagram untuk Pengguna</h2>
+                <ul class="mt-3 space-y-2 ml-16 text-gray-600 text-lg">
+                    <li>Registrasi Akun</li>
+                    <li>Login</li>
+                    <li>Akses Halaman Pengaduan</li>
+                    <li>Isi Form Pengaduan</li>
+                    <li>Submit Laporan</li>
+                    <li>Sistem Menyimpan Pengaduan</li>
+                    <li>Lihat Status Pengaduan</li>
+                </ul>
+            
+                <!-- Gambar Activity Diagram untuk User -->
+                <div class="flex flex-col items-center mt-6">
+                    <img src="/Public/img/article4/Activity Diagram - Pengguna Membuat Pengaduan.jpg" alt="Activity Diagram Pengguna" class="w-full max-w-md mx-auto shadow-md">
+                </div>
+            
+                <h2 class="font-bold text-xl text-gray-600 ml-10 mt-10">Activity Diagram untuk Admin</h2>
+                <ul class="mt-3 space-y-2 ml-16 text-gray-600 text-lg">
+                    <li>Login</li>
+                    <li>Verifikasi Pengaduan</li>
+                    <li>Memberikan Tanggapan</li>
+                    <li>Update Status Pengaduan</li>
+                </ul>
+            
+                <!-- Gambar Activity Diagram untuk Admin -->
+                <div class="flex flex-col items-center mt-6">
+                    <img src="/Public/img/article4/Activity Diagram - Admin.jpg" alt="Activity Diagram Admin" class="w-full max-w-md mx-auto shadow-md">
+                </div>
+            </div>
+            <br><br>
+
+            <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">3. Class Diagram</h1>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Class Diagram menggambarkan struktur kelas dalam sistem. Diagram ini menampilkan kelas-kelas yang ada dalam sistem, serta atribut (data) dan method (fungsi) yang dimiliki oleh setiap kelas. Class Diagram adalah bagian integral dari desain objek dalam pemrograman berorientasi objek.Class Diagram sangat penting untuk merancang dan merencanakan struktur sistem, terutama untuk aplikasi berbasis objek. Diagram ini membantu pengembang untuk memahami bagaimana berbagai objek dalam sistem saling berinteraksi dan berfungsi.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Contoh Project:</strong> Perancangan sistem informasi pengaduan fasilitas berbasis web.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Perancangan Class Diagram:</strong>
+                </p>
+            
+                <h2 class="font-bold text-xl text-gray-600 ml-10 mt-6">1. User</h2>
+                <ul class="mt-3 space-y-2 ml-16 text-gray-600 text-lg">
+                    <li>id_user : int (Primary Key)</li>
+                    <li>nama : varchar</li>
+                    <li>email : varchar</li>
+                    <li>password : varchar</li>
+                </ul>
+            
+                <h2 class="font-bold text-xl text-gray-600 ml-10 mt-6">2. Pengaduan</h2>
+                <ul class="mt-3 space-y-2 ml-16 text-gray-600 text-lg">
+                    <li>id_pengaduan : int (Primary Key)</li>
+                    <li>id_user : int (Foreign Key ke User)</li>
+                    <li>judul_pengaduan : varchar</li>
+                    <li>deskripsi_pengaduan : text</li>
+                    <li>tanggal_pengaduan : date</li>
+                    <li>status_pengaduan : enum/varchar ('Menunggu', 'Diproses', 'Selesai')</li>
+                </ul>
+            
+                <h2 class="font-bold text-xl text-gray-600 ml-10 mt-6">3. Tanggapan</h2>
+                <ul class="mt-3 space-y-2 ml-16 text-gray-600 text-lg">
+                    <li>id_tanggapan : int (Primary Key)</li>
+                    <li>id_pengaduan : int (Foreign Key ke Pengaduan)</li>
+                    <li>id_admin : int (Foreign Key ke Admin)</li>
+                    <li>isi_tanggapan : text</li>
+                    <li>tanggal_tanggapan : date</li>
+                </ul>
+            
+                <h2 class="font-bold text-xl text-gray-600 ml-10 mt-6">4. Admin</h2>
+                <ul class="mt-3 space-y-2 ml-16 text-gray-600 text-lg">
+                    <li>id_admin : int (Primary Key)</li>
+                    <li>nama_admin : varchar</li>
+                    <li>username : varchar</li>
+                    <li>password : varchar</li>
+                </ul>
+            
+                <!-- Gambar Class Diagram -->
+                <div class="flex flex-col items-center mt-6">
+                    <img src="/Public/img/article4/Class Diagram Sistem Informasi Pengaduan.jpg" alt="Class Diagram Pengaduan" class="w-full max-w-md mx-auto shadow-md">
+                </div>
+            </div>
+            <br><br>
+
+            <div class="prose">
+                <h1 class="font-bold text-2xl text-gray-600 ml-2">4. Sequence Diagram</h1>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Sequence Diagram adalah salah satu jenis diagram dalam <strong>UML (Unified Modeling Language)</strong> yang menggambarkan interaksi antar objek dalam urutan waktu tertentu. Diagram ini menunjukkan bagaimana objek-objek dalam sistem berkomunikasi satu sama lain dengan saling mengirimkan pesan untuk mencapai tujuan tertentu.
+                </p>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    Sequence Diagram sangat berguna untuk menggambarkan bagaimana sistem berfungsi secara dinamis, dan bagaimana proses atau alur tertentu diproses dalam sistem berdasarkan urutan waktu yang jelas.
+                </p>
+                <h2 class="font-bold text-xl text-gray-600 mt-6 ml-10">Fungsi Utama Sequence Diagram:</h2>
+                <ul class="mt-5 space-y-4 ml-10">
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        <strong>Memvisualisasikan Interaksi:</strong> Sequence Diagram menggambarkan bagaimana objek dalam sistem berinteraksi satu sama lain. Interaksi ini bisa berupa panggilan fungsi, pengiriman data, atau respons balik.
+                    </li>
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        <strong>Memahami Proses:</strong> Dengan melihat urutan pesan dalam Sequence Diagram, pengembang dan tim dapat memahami bagaimana suatu proses dilakukan dari awal hingga akhir.
+                    </li>
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        <strong>Menangani Skenario:</strong> Sequence Diagram bisa dibuat untuk menggambarkan berbagai skenario dalam sistem, mulai dari skenario sederhana hingga skenario kompleks dengan banyak objek yang terlibat.
+                    </li>
+                    <li class="list-none text-gray-600 text-lg ml-4">
+                        <strong>Menganalisis Kinerja Sistem:</strong> Diagram ini memungkinkan kita untuk mengevaluasi kinerja dan efisiensi dari urutan interaksi antar objek dalam skenario tertentu.
+                    </li>
+                </ul>
+                <br>
+                <p class="text-lg text-gray-600 mt-4 ml-10">
+                    <strong>Contoh Project:</strong> Perancangan sistem informasi pengaduan fasilitas berbasis web.
+                </p>
+            
+                <div class="flex flex-col items-center mt-4">
+                    <img src="/Public/img/article4/Editor _ Mermaid Chart-2025-04-28-050235.png" alt="Sequence Diagram" class="w-full max-w-md mx-auto shadow-md">
+                </div>
+            </div>
+            
+            
+            
+            
+
+
+
+
+
+
+            <!-- Author Information -->
+            <div class="flex items-center mt-16">
+                <img src="../public/profile blog.jpg" alt="Author Avatar" class="h-10 w-10 rounded-full mr-4">
+                <div>
+                    <p class="text-sm text-gray-600">Written by
+                        <span class="font-bold">Ahmad Maulana</span>
+                    </p>
+                    <p class="text-sm text-gray-600">Follow on
+                        Instagram: <a href="https://www.instagram.com/a.hmadmaulana/?igshid=YTQwZjQ0NmI0OA%3D%3D"
+                            class="text-blue-500 hover:underline">@a.hmadmaulana</a>
+                    </p>
+                </div>
+            </div>
+            <!-- Comments Section -->
+        </article>
+
+
+
+        <br>
+        <div>
+            <a href="article5.html" class="px-4 py-2 bg-white text-black border border-gray-300 rounded-lg hover:bg-gray-100 transition">
+                Lanjut Membaca?
+            </a>
+        </div>
+
+    </section>
+
+    <section id="Materi" class="mt-40">
+        <h1 class="text-xl font-bold text-gray-600 text-center" id="entry-text">MATERI <p>ANALISIS DAN PERANCANGAN BERORIENTASI OBJEK
+            </p>
+        </h1>
+        <div class="mx-auto flex flex-col grid gap-9 lg:grid-cols-3 md:grid-cols-2 p-4" id="article">
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article1.html"></a>
+                </div>
+                <div class="group relative bg-fixed">
+                    <img src="../public/img/article1/konsep dasar.png" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article1.html">
+                            <span class="absolute inset-0 "></span>
+                            BAB 1 <p>KONSEP DASAR</p>
+                        </a>
+                    </h3>
+                </div>
+
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article2.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article2/bab 2.jpg " class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article2.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 2 <p>PERANCANGAN SISTEM PENDEKATAN TERSTRUKTUR</p>
+                        </a>
+                    </h3>
+
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article3.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article3/bab 3.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article3.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 3 <p>PERANCANGAN BERORIENTASI OBJEK</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article4.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article4/bab4.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article4.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 4 <p>PEMBAHASAN MATERI MENGENAI UML</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article5.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article5/bab 5.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article5.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 5 <p>TEKNIK PENGUMPULAN DATA</p>
+                        </a>
+                    </h3>
+
+
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article6.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article6/bab 6.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article6.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 6 <p>DESAIN SISTEM</p>
+                        </a>
+                    </h3>
+
+            </article>
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article7.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article7/bab 7.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article7.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 7 <p>DESAIN SISTEM SECARA UMUM</p>
+                        </a>
+                    </h3>
+                </div>
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article8.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article8/bab8.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article8.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 8 <p>DESAIN SISTEM TERINCI</p>
+                        </a>
+                    </h3>
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article9.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article9/bab9.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article9.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 9 <p>PERANGKAT PERMODELAN SISTEM</p>
+                        </a>
+                    </h3>
+            </article>
+
+            <article
+                class="p-6 flex flex-col items-start justify-between hover:scale-90 transition-all duration-500 border border-b rounded-xl shadow-2xl p-2">
+                <div class="flex items-center gap-x-4 text-xs">
+                    <a href="../src/article10.html"></a>
+                </div>
+                <div class="group relative">
+                    <img src="../public/img/article10/bab 10.jpg" class="rounded-xl size-cover"  alt="">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <a href="../src/article10.html">
+                            <span class="absolute inset-0"></span>
+                            BAB 10 <p>IMPLEMENTASI SISTEM</p>
+                        </a>
+                    </h3>
+            </article>
+    </section>
+
+    
+    <div class="mt-18">
+        <footer class="bg-footer text-gray-600 p-2 shadow-inner">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 Ahmad Maulana. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+
+        // Fungsi untuk melakukan scroll halus
+        function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Menambahkan event listener pada link Materi
+        document.addEventListener('DOMContentLoaded', function () {
+            const materiLink = document.querySelector('a[href="#Materi"]');
+
+            if (materiLink) {
+                materiLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll('Materi');
+                });
+            }
+        });
+
+        // Menambahkan event listener pada link Home
+        document.addEventListener('DOMContentLoaded', function () {
+            const materiLink = document.querySelector('a[href="#Home"]');
+
+            if (materiLink) {
+                materiLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    smoothScroll('Home');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
